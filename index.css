@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'inter';
+  src: url('assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+  
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #000000;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.victoria {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto; 
+  width: 90%; 
+  max-width: 400px; 
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #343333;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.name {
+  color: white;
+  font-size: 1.75rem; 
+  font-family: "inter", sans-serif;
+  font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.location {
+  color: #a2dc56;
+  font-size: 1rem; 
+  font-family: "inter", sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.bio {
+  color: white;
+  font-size: 1rem; 
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+a {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1rem; 
+  font-family: "inter", sans-serif;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: rgb(99, 100, 99);
+  padding: 10px;
+  width: 100%; 
+  max-width: 330px; 
+}
+
+a:hover {
+  background-color: #a2dc56;
+  color: rgb(62, 61, 61);
+}
+
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%; 
+    padding: 20px; 
+  }
+
+  .name {
+    font-size: 1.5rem; 
+  }
+
+  .location, .bio, a {
+    font-size: 0.9rem; 
+  }
+
+  .victoria {
+    height: 80px; 
+    width: 80px;
+  }
+
+  a {
+    padding: 8px;
+  }
+}
